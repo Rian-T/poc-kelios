@@ -10,7 +10,9 @@ st.text("This is our live demo for the Kelios Data challenge.")
 
 d = st.date_input(
      "Date from which to do the forecasting",
-     datetime.date(2021, 12, 6))
+     datetime.date(2021, 12, 11),
+     min_value=datetime.date(2021, 8, 1),
+     max_value=datetime.date(2021,12, 31))
 st.write('Selected date is:', d)
 
 # options = st.selectbox(
